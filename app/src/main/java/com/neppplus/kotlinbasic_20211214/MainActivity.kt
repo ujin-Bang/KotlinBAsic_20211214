@@ -43,6 +43,16 @@ class MainActivity : AppCompatActivity() {
 
         }
 
+        btnContentToast.setOnClickListener {
+
+            val inputContent = edtContent.text.toString()
+
+//            입력된 내용을 -> 토스트로 출력
+
+            Toast.makeText(this, inputContent, Toast.LENGTH_SHORT).show()
+
+        }
+
 
     }
 }
